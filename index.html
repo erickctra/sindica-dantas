@@ -4,30 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample</title>
+    <title>Eliana Dantas - Sindica Profissional</title>
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div id="dialog-whatsapp-group" class="dialog-whatsapp">
-        <div id="dialog-whatsapp" class="content">
-            <div class="header">
-                <p>Iniciar Conversa</p>
-                <p>Oi! Clique abaixo para uniciar uma
-                    conversa via Whatsapp</p>
-            </div>
-            <p>Normalmente respondemos em alguns minutos.</p>
-            <a class="card" href="#">
-                <div class="pic"></div>
-                <div class="info">
-                    <p>(11) Numero</p>
-                    <p>Eliana Dantas</p>
-                </div>
-                <img src="/assets/icons/whatsapp.svg" alt="">
-            </a>
+    <div id="dialog-whatsapp" class="content-whatsapp" style="visibility: hidden; display: block; transform: translateY(0px); opacity: 1;">
+        <div class="header">
+            <p>Iniciar Conversa</p>
+            <p>Oi! Clique abaixo para uniciar uma
+                conversa via Whatsapp</p>
         </div>
+        <p>Normalmente respondemos em alguns minutos.</p>
+        <a class="card" target="_blank" href="https://contate.me/sindica-elianadantas">
+            <div class="pic"></div>
+            <div class="info">
+                <p>(11) 99604-8780</p>
+                <p>Eliana Dantas</p>
+            </div>
+            <img src="/assets/icons/whatsapp.svg" alt="">
+        </a>
+    </div>
 
+    <div id="dialog-whatsapp-group" class="dialog-whatsapp">
         <button onclick="showWhatsapp()" id="dialog-whatsapp-button"></button>
     </div>
 
@@ -36,18 +36,39 @@
             <img loading="lazy" src="./assets/logo.svg" alt="logo eliana dantas" srcset="">
         </div>
         <hr>
-        <div class="row">sub</div>
+        <div class="row">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#formations">Formações</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
         <hr>
     </header>
     <!-- end of header -->
 
-    <section class="home">
-        <div class="box"></div>
+    <section id="home" class="home">
+        <div id="slider1" class="box">
+            <ul class="popup">
+                <li>
+                    <img src="./assets/icons/star.svg" alt="">
+                    Credenciada <br>
+                    pelo IBRESP
+                </li>
+                <hr>
+                <li>
+                    <img src="./assets/icons/star.svg" alt="">
+
+                    Experiência <br> Comprovada
+                </li>
+            </ul>
+        </div>
         <div class="box">
             <h1>Garantia de um <br>Condomínio <br>Tranquilo </h1>
             <p>Ser síndica é ser o elo que une, o guardião do lar, aquele que zela com paixão e responsabilidade pelo
                 patrimônio de todos nós, o nosso querido condomínio.</p>
-            <a href="#">Entrar em contato</a>
+            <a href="https://contate.me/sindica-elianadantas">Entrar em contato</a>
 
             <img src="./assets/icons/start-outline.svg" alt="">
         </div>
@@ -58,7 +79,7 @@
     </section>
 
 
-    <section class="mission">
+    <section id="about" class="mission">
         <div class="box">
             <div class="title">
                 <h1>A Minha Missão</h1>
@@ -72,12 +93,32 @@
                 assegurar este compromisso , cumprindo meu trabalho sempre com comprometimento, integridade, lealdade e
                 respeito</p>
         </div>
-        <div class="box"></div>
+        <div class="box">
+            <ul>
+                <li><img src="./assets/icons/star.svg" alt="">Responsabilidade</li>
+                <hr>
+                <li><img src="./assets/icons/star.svg" alt="">Honestidade</li>
+                <hr>
+                <li><img src="./assets/icons/star.svg" alt="">Justiça</li>
+                <hr>
+                <li><img src="./assets/icons/star.svg" alt="">Alta qualidade</li>
+            </ul>
+        </div>
+    
     </section>
-
-    <section class="formation">
+<div class="mission-hr">
+    <hr>
+</div>
+    <section id="formations" class="formation">
         <ul>
-            <li></li>
+            <h1>Minhas formações:</h1>
+            <li><img src="./assets/icons/star.svg" alt="">Tecnico em transações imobiliarias</li>
+            <li><img src="./assets/icons/star.svg" alt="">Avaliação de imóveis</li>
+            <li><img src="./assets/icons/star.svg" alt="">Perita judicial para corretor de imoveis</li>
+            <li><img src="./assets/icons/star.svg" alt="">Fotografia imobiliaria</li>
+            <li><img src="./assets/icons/star.svg" alt="">Bacharel em direito pela faculdade FMU</li>
+            <li><img src="./assets/icons/star.svg" alt="">Sindica profissional pelo IBRESP</li>
+            <li><img src="./assets/icons/star.svg" alt="">Administração de condominios pelo IBRESP</li>
         </ul>
     </section>
 
@@ -106,6 +147,10 @@
             <p>"Art. 1.347. A assembléia escolherá um síndica, que poderá não ser condômino, para administrar o
                 condomínio, por prazo não superior a dois anos, qual poderá renovar-se."</p>
         </div>
+    </section>
+
+    <section style="background-image: url('./assets/banner2.jpg'); height: 250px; background-attachment: fixed;"
+        class="banner">
     </section>
 
 
@@ -201,8 +246,9 @@
 
     <section id="pre-contact" class="pre-contact">
         <div class="content">
-            <h1>Vamos resolver seu problema?</h1>
+            <h1>Vamos ajudar seu condominio!</h1>
             <p>tenho as formações necessárias para ajudar seu condominio</p>
+            <a href="#formations">Formações <img src="./assets/icons/arrow-pink.svg" alt=""></a>
         </div>
     </section>
 
@@ -224,7 +270,7 @@
             </p>
         </div>
         <div class="message">
-            <a class="whatsapp" href="#">Entre em contato pelo whatsapp</a>
+            <a class="whatsapp" href="https://contate.me/sindica-elianadantas">Entre em contato pelo whatsapp</a>
 
             <p>Ou preencha o formulario abaixo ou faça uma ligação para iniciarmos:</p>
             <form action="">
@@ -239,7 +285,7 @@
     </section>
 
     <footer>
-        Todos os direitos reservados #empresa# - 2023
+        Todos os direitos reservados Eliana Dantas - 2023
     </footer>
 </body>
 <script src="/js/main.js"></script>

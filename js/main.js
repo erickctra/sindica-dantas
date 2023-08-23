@@ -81,3 +81,21 @@ let observer = new IntersectionObserver(callback, options);
 
 const target1 = document.getElementById("contact");
 observer.observe(target1);
+
+const dialogCount = 6;
+
+var imgArray = [
+    './assets/slider1.jpg',
+    './assets/slider2.png',
+    './assets/picreform.jpeg'
+];
+var curIndex = 0;
+var imgDuration = 3000;
+
+function slideShow() {
+    document.getElementById('slider1').style.backgroundImage = `url(${imgArray[curIndex]})`;
+    curIndex++;
+    if (curIndex == imgArray.length) { curIndex = 0; }
+    setTimeout("slideShow()", imgDuration);
+}
+slideShow();
